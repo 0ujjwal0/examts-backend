@@ -14,7 +14,7 @@ dotenv.config();
 connectDB();
 app.use(
   cors({
-    origin: "https://examly-lovat.vercel.app",
+    origin: ["http://localhost", "http://localhost:3000"], //https://examly-lovat.vercel.app
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
   })
